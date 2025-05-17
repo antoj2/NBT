@@ -264,6 +264,10 @@ public class PalettizedCuboid<E extends Tag<?>> implements TagWrapper<CompoundTa
         return packedData.length;
     }
 
+    public List<E> getPalette() {
+        return Collections.unmodifiableList(palette);
+    }
+
     /**
      * Length of one edge of the cuboid (ex. 4 for a 4x4x4 cuboid).
      */
